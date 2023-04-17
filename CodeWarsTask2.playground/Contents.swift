@@ -2,7 +2,6 @@ import UIKit
 
 // MARK: - 1 Напишите функцию, которая при присвоении числа >= 0 возвращает массив подмассивов восходящей длины.
 // Ссылка на задачу: https://www.codewars.com/kata/515f51d438015969f7000013/train/swift
-
 // Первое решение
 func pyramid(_ n: Int) -> [[Int]] {
     return (0...n).map { Array(repeating: 1, count: $0) }.filter { !$0.isEmpty }
@@ -74,7 +73,6 @@ findOutlier([1, 2, 3, 5, 33])
 
 // MARK: - 4 Если волк ближе всего к вам животное, верните одно и другое значение в противном случае.
 // Ссылка на задачу: https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/swift
-
 // Первое решение
 func warnTheSheep(_ queue: [String]) -> String {
     if queue.last == "wolf" {
